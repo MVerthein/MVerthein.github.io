@@ -32,6 +32,9 @@ img {
   margin-left: 500px;
   width: 500px;
 }
+aside nav ul {
+  margin: o auto;
+}
 header {
   display: block;
   background-color: #89BDD3;
@@ -47,4 +50,6 @@ footer {
   margin-top: 300px;
   text-align: center;
   clear: both;
+  border-top: 2px solid #c9c9c9;
+  border-bottom: 2px solid #c9c9c9;
 }
