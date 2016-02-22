@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blog Post</title>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://mverthein.github.io/">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://mverthein.github.io/b-index.html">Blog Home</a></li>
+      </ul>
+    </nav>
+<main>
+    <h1>Phase 0</h1>
+    <h2>Week 5</h2>
+    <h4>February 21, 2016</h4>
+
+    <section>
+      <h5>Enumerable group_by</h5>
+      <p>I decided to explain the enumerable group_by. One of the main reasons I chose group_by is because in my research, it was an enumerable that I personally did not use in the past week. In a simple way to explain, the enumerable group_by is a way to break a collection into groups based a given criteria. When using group_by the returned grouping will be the key, which is the group represented, and then the corresponding value that are the containing members of that group.</p>
+
+      <p>In the code below, the numbers 0 through 16 are going to be passed to the block which will receive each number as the parameter number. The group that each number is placed into is determined by the result value of the block, number % 3.</p>
+        <code>
+          (0..15).group_by {|number| number % 3}
+          => {0=>[0,3,6,9,12,15], 1=>[1, 4, 7, 10, 13], 2=>[2, 5, 8, 11, 14]}
+        </code>
+      <p>A slightly more complex example is when we take an array of strings, and want to group up the strings in a certain way. For example to group up strings based on length of the string.</p>
+        <code>
+          futurama = ["Fry", "Lela", "Hubert", "Bender", "Amy"]
+          futurama.group_by{|toon| toon.length}
+          => {3=>["Fry", "Amy"], 4=>["Lela"], 6=>["Hubert", "Bender"]}
+        </code>
+      <p>The resulting hash from the code above groups together each name with the same length, using the length has the key, and the names (strings) that correspond with key.</p>
+    </section>
+    </main>
+      <footer>&copy 2016 Michael Verthein</footer>
+    </body>
+  </html>
