@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blog Post</title>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://mverthein.github.io/">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://mverthein.github.io/b-index.html">Blog Home</a></li>
+      </ul>
+    </nav>
+<main>
+    <h1>Phase 0</h1>
+    <h2>Week 6</h2>
+    <h4>February 28th 2016</h4>
+
+    <section>
+      <p>This week is all about Classes in Ruby. A class, at its core like everything else in ruby, is an object that allows you to create new instances with methods built in. Methods that you define within said class. A class is essentially a blueprint, for what you want to build, your own class. For example if want to create a new class: Song</p>
+<pre>
+<code>
+  class Song
+    def initilaize(name, artist, duration)
+      @name = name
+      @artist = artist
+      @duration = duration
+    end
+  end
+</code>
+</pre>
+      <p>Here we created a basic class Song, which contains a single method, initialize. Which is a special method in Ruby to do exactly what it says, initialize the new class we have created. To set up the new object Song state. In this example Song the initialize method takes three parameters, name, artist, and duration. We then need to store these values as instance variables  (@name, @artist, @duration) within the object. This way we can use the variables anywhere else inside the class as well.</p>
+      <p>
+      We can then call upon this Class (with three parameters) to make a new object. To test, we can call to the class. This will create newsong variable using the three parameters built from the Song class.</p>
+      <pre>
+      <code>
+        newsong = Song.new('Bohemian Rhapsody', 'Queen', 360)
+      </code>
+    </pre>
+    </section>
+    </main>
+      <footer>&copy 2016 Michael Verthein</footer>
+    </body>
+  </html>
