@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blog Post</title>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://mverthein.github.io/">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://mverthein.github.io/b-index.html">Blog Home</a></li>
+      </ul>
+    </nav>
+<main>
+    <h1>Ruby Hashes and Javascript Objects</h1>
+    <h2>Week 7</h2>
+    <h4>March 5th, 2016</h4>
+    <h6></h6>
+    <section>
+      <p>There are a number of similarities and differences when it comes to compairing Ruby hashes and Javascript's Objects. The main points to look at are what hashes and objects are. At their core they are simply collections of data, that have a lot of similarites when creating a hash or an object.</p>
+  <pre>
+    <code>
+      # Ruby Hash (using symbol format)
+        student = {
+          first_name: "Mike",
+          last_name: "Verthein",
+          age: 28,
+          city: "Chicago",
+      }
+      // Javascript Object
+        var student = {
+          first_name: "Mike",
+          last_name: "Verthein",
+          age: 28,
+          city: "Chicago",
+      }
+    </code>
+  </pre>
+      <p>However, we start seeing some differences when we want to access their values, and their their lebelled values. In Ruby we call the label a key, and in JavaScript, we call it a property, but the effect is essentially the same. The corresponding values (both Ruby and JavaScript are labelled the same) can be anything. In the examples above they are strings and integers, however values in both can also be arrays or other hashes or objects.</p>
+      <pre>
+      <code>
+        # Ruby Hash:
+          student[:age]
+          => 28
+
+        // Javascript object:
+          student.age;
+          => 28
+      </code>
+    </pre>
+      <p></p>
+    </section>
+    </main>
+      <footer>&copy 2016 Michael Verthein</footer>
+    </body>
+  </html>
