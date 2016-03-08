@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blog Post</title>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://mverthein.github.io/">Home</a></li>
+        <li><a href="../projects/p-index.html">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://mverthein.github.io/b-index.html">Blog Home</a></li>
+      </ul>
+    </nav>
+<main>
+    <h1>SQL Injection</h1>
+    <h2>Week 8</h2>
+    <h4>March 10th, 2016</h4>
+        <section>
+      <p>SQL Injection, simply stated is a code injection (forced placement) technique that is used to attack applications that sources data, in which the malicious statements are inserted to gain access to that database. The use of the injection is the exploit security vulnerabilies to the application's software. The purpose of these attacks is to allow the attacker to gain access to the data, and tamper with the existing data, or simply destroying the data. The interesting think about SQL injection, is that it is a common issues with any database-driven websites. A study in 2012 shows that any site will be attacked by a SQL injection on average 4 times per month.</p>
+      <p>Here is a simple example from www.owasp.org of what is going on with an SQL injection:</p>
+    <pre>
+    <p>In SQL:</p>
+    <code>
+      select id, firstname, lastname from authors
+    </code>
+    <p>If one provided:</p>
+    <code>
+      Firstname:evil'ex
+      Lastname: Newman
+    </code>
+    <p>the query string becomes:</p>
+    <code>
+      select id, firstname, lastname from authors where forename = 'evil'ex' and surname ='newman'
+    </code>
+    <p>the database will attempt to run this as:</p>
+    <code>
+      Incorrect syntax near il' as the datavase tried to excute evil.
+    </code>
+  </pre>
+      <p>At the core, the attack is accomplished by placing a meta character into data input to then place SQL commands in the control plane which did not exist there before. That being said, stopping attackers from accessing your database should be a top priority, as your database generally holds sensitive data that should not be open to anyone snooping about.</p>
+
+    </section>
+    </main>
+      <footer>&copy 2016 Michael Verthein</footer>
+    </body>
+  </html>
