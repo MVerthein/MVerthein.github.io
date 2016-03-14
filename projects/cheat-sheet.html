@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Blog Post</title>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="http://mverthein.github.io/">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="http://mverthein.github.io/b-index.html">Blog Home</a></li>
+      </ul>
+    </nav>
+<main>
+    <h1></h1>
+    <h2>Ruby Cheat Sheet!!</h2>
+    <h4></h4>
+
+    <section>
+      <h4>Ruby Enumerables</h4>
+        <p>Enumerable is possible in Ruby due to the notion of “mixins.” In most languages, code sharing is only possible through inheritance, and inheritance is generally limited to one parent class. In addition to classes, Ruby has modules which are containers for methods and constants. If you want to write code once and share it between a bunch of unrelated classes, you can put it in modules to be “mixed in” with your classes.</p>
+      <pre>
+    <code>
+    </code>
+      </pre>
+    <h4>Ruby Integers</h4>
+      <p>This class is the basis for the two concrete classes that hold whole numbers, Bignum and Fixnum.</p>
+        <pre>
+          <code>
+            num = 291937429
+          </code>
+        </pre>
+    <h4>Ruby Strings</h4>
+      <p>A string is a group of characters that typically make up human readable words or sentences. Because strings are essentially the mechanism by which applications communicate with their users it is inevitable that string manipulation is a key part of programming.</p>
+        <pre>
+          <code>
+            string = "hello"
+          </code>
+        </pre>
+    <h4>Ruby Array</h4>
+      <p>Ordered, Zero Indexed -  Integer-Indexed,  collections, of any object</p>
+        <pre>
+          <code>
+            a = []
+            a = Array.new
+            a = Array.new(5)
+
+            a[3] => fourth element in array
+
+          </code>
+        </pre>
+    <h4>Ruby Hash</h4>
+      <p>A Hash is a collection of key-value pairs like this: "employee" => "salary". It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
+
+      As with arrays, there is a variety of ways to create hashes. You can create an empty hash with the new class method:</p>
+        <pre>
+          <code>
+            months = Hash.new
+            You can also use new to create a hash with a default value, which is otherwise just nil:
+
+            months = Hash.new( "month" )
+
+            or
+
+            months = Hash.new "month"
+          </code>
+        </pre>
+    </section>
+    </main>
+      <footer>&copy 2016 Michael Verthein</footer>
+    </body>
+  </html>
